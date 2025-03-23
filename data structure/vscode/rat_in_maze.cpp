@@ -90,7 +90,7 @@ class myStack {
     } ;
 
 
-// main functiob
+// main function
 Point** solveMaze(bool** maze, int sizeX, int sizeY, Point start, Point end) {
     // initialize predecessor = {-1, -1}
     Point** predecessor = new Point*[sizeX] ;
