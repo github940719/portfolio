@@ -78,10 +78,11 @@ void insertionSort(vector<int>& arr, int n) {
                 arr[j+1] = arr[j] ;
             }
             else {
-                arr[j+1] = pivot ;
                 break ;
             }
         }
+
+        arr[j+1] = pivot ;
     }
 }
 
@@ -164,6 +165,7 @@ void mergeSortIteration(vector<int>& arr) {  // memory
 
 void radixSort(vector<int>& arr, int n) {  // memory
 
+    // find the max element
     int maxValue = arr[0] ;
     for (int i = 1; i < n; i++) {
         if (arr[i] > maxValue) {
